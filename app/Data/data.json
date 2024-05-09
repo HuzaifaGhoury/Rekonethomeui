@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Jack Gunnar",
+      "image": "/Images/onlinefriendimg1.svg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Foster",
+      "image": "/Images/onlinefriendimg2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Lee Zheng",
+      "image": "/Images/onlinefriendimg3.svg"
+    },
+    {
+        "id": 4,
+        "name": "Rose",
+        "image": "/Images/onlinefriendimg4.svg"
+    },
+      {
+        "id": 5,
+        "name": "John Dhoe",
+        "image": "/Images/onlinefriendimg5.svg"
+    }
+  ]
+  
