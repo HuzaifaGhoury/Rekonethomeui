@@ -1,4 +1,5 @@
-[
+{
+  "onlineFriends": [
     {
       "id": 1,
       "name": "Jack Gunnar",
@@ -15,14 +16,70 @@
       "image": "/Images/onlinefriendimg3.svg"
     },
     {
-        "id": 4,
-        "name": "Rose",
-        "image": "/Images/onlinefriendimg4.svg"
+      "id": 4,
+      "name": "Rose",
+      "image": "/Images/onlinefriendimg4.svg"
     },
-      {
-        "id": 5,
-        "name": "John Dhoe",
-        "image": "/Images/onlinefriendimg5.svg"
+    {
+      "id": 5,
+      "name": "John Dhoe",
+      "image": "/Images/onlinefriendimg5.svg"
     }
-  ]
-  
+  ],
+  "storyData": [
+    {
+      "id": 1,
+      "name": "JackGunnar",
+      "image": "/Images/onlinefriendimg1.svg",
+      "storyimage": "/Images/story1.svg"
+
+
+    },
+    {
+      "id": 2,
+      "name": "Jane Foster",
+      "image": "/Images/onlinefriendimg2.svg",
+      "storyimage": "/Images/story2.svg"
+
+      
+
+    },
+    {
+      "id": 3,
+      "name": "Lee Zheng",
+      "image": "/Images/onlinefriendimg3.svg",
+      "storyimage": "/Images/story3.svg"
+
+
+    },
+    {
+      "id": 4,
+      "name": "John Dhoe",
+      "image": "/Images/onlinefriendimg4.svg",
+      "storyimage": "/Images/story4.svg"
+
+    },
+    {
+      "id": 5,
+      "name": "JackGunnar",
+      "image": "/Images/onlinefriendimg1.svg",
+      "storyimage": "/Images/story1.svg"
+
+
+    }
+    
+   ],
+   "postData": [
+{
+  "id": 1,
+  "name": "Barry Allen",
+  "activeseen": "25 minutes ago",
+  "galleryone": "/Images/gallery1.svg",
+  "gallerytwo": "/Images/gallery2.svg",
+  "gallerythree": "/Images/gallery3.svg",
+  "image": "/Images/postimg.svg",
+  "description": "Take a breath people, we need oxygen, Stay Green!",
+  "likes":"12"
+   }
+   ]
+}

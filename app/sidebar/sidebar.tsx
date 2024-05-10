@@ -7,6 +7,8 @@
 import Home from '../home'
 
     const Sidebar = () => {
+        const onlineFriends = data.onlineFriends;
+
     return (
         <div className='flex'>
         <div className=' w-60  h-auto  bg-gray-100'>
@@ -47,7 +49,7 @@ import Home from '../home'
         <div className=' pl-5 pt-9'>
             <div className=' pb-7 flex font-inter  font-bold  text-slate-900'>Online Friends (5)</div>
             <div  className='flex gap-5 flex-col'>
-        {data.map(friend => (
+        {onlineFriends.map(friend => (
             <div key={friend.id} className='flex  gap-2'>
                 <div>
                 <Image src={friend.image} alt={friend.name}  width={35}
