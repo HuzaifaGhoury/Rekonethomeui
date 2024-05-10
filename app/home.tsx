@@ -58,7 +58,7 @@ const Home = () => {
         ))}
       </div>
       <div className='  h-20  mt-8 ml-8 rounded-lg shadow-md flex gap-3 '
-      style={{ width: 'calc(80% - 6px)' }}
+      style={{ width: 'calc(100% - 6px)' }}
       >
 <div className=' pl-7 pt-5'>
 <Image src={user} alt='user'/>
@@ -73,7 +73,7 @@ const Home = () => {
 </div>
       </div>
       <div className='  h-auto  pb-10 mt-8 ml-8  rounded-lg shadow-md '
-        style={{ width: 'calc(80% - 6px)' }}
+        style={{ width: 'calc(100% - 6px)' }}
       >
 
 <div >
@@ -100,10 +100,10 @@ const Home = () => {
            
             <div className='mt-5 ml-5  flex gap-5'>
 
-                <Image src={post.galleryone} alt='gallery' width={250} height={250}/>
+                <Image src={post.galleryone} alt='gallery' width={270} height={250}/>
                 <div>
-                <Image src={post.gallerytwo} alt='gallery' width={270} height={280}/>
-                <Image src={post.gallerythree} alt='gallery' width={270} height={280} className='pt-5'/>
+                <Image src={post.gallerytwo} alt='gallery' width={290} height={280}/>
+                <Image src={post.gallerythree} alt='gallery' width={290} height={280} className='pt-5'/>
 
                 </div>
             </div>
@@ -120,7 +120,7 @@ const Home = () => {
 <FaRegCommentDots className='text-2xl text-gray-300 mt-1  ' />
 <TbLocationShare  className='text-2xl text-gray-300 mt-1' />
 
-<BiBookmarkMinus className='text-2xl text-gray-300  ml-80 mt-1 '/>
+<BiBookmarkMinus className='text-2xl text-gray-300   ml-80 mt-1 '/>
 
  </div> 
 
