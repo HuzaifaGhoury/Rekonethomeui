@@ -10,7 +10,7 @@ import { BiBookmarkMinus } from "react-icons/bi";
 const Home = () => {
   const storyData = data.storyData; 
   const postData = data.postData
-
+  
   return (
     <div>
       <div className="relative top-5 left-7 flex justify-between" style={{ width: 'calc(120% - 6px)' }}>
