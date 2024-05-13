@@ -7,6 +7,7 @@ import Home from '../home';
 import logo from '../../public/Images/png earth 1.svg';
 import user from '../../public/Images/useroneimg.svg';
 
+
 const Sidebar = () => {
     const onlineFriends = data.onlineFriends;
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -17,15 +18,12 @@ const Sidebar = () => {
 
     return (
         <div className="flex">
-            {/* Sidebar */}
             <div className={` top-0 left-0 w-60 h-auto bg-gray-100 z-50 ${isDrawerOpen ? 'md:hidden' : 'hidden md:block'}`}>
-                {/* Cross icon to close the drawer */}
                 {isDrawerOpen && (
                     <div className="flex justify-end p-4">
                         <FaTimes onClick={toggleDrawer} className="cursor-pointer" />
                     </div>
                 )}
-
                 <div className='w-60 h-screen bg-gray-100'>
                     <div>
                         <Image src={logo} alt='logo' className='ml-9' />
@@ -61,7 +59,6 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            {/* Button to toggle the sidebar drawer on mobile view */}
             <button onClick={toggleDrawer} className="block md:hidden fixed top-5 left-5 z-50">Toggle Sidebar</button>
 
             <div>
