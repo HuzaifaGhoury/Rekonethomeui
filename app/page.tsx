@@ -1,13 +1,13 @@
 import React from 'react'
-import Sidebar from './sidebar/sidebar';
+import Sidebar from '../app/sidebar/sidebar'
 
 const page = () => {
   return (
     <div>
+<Sidebar/>
 
-      <Sidebar/>
     </div>
   )
 }
 
-export default page;
+export default page;    
