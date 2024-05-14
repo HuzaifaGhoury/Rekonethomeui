@@ -4,11 +4,11 @@ import { Layout, Menu } from 'antd';
 import { FaHome, FaUser, FaEnvelope, FaUsers, FaGlobe, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import Home from '../home';
-import Profile from '../profile'; // Import your Profile component
+// import Profile from '../profile'; // Import your Profile component
 import data from '../Data/data.json';
 import logo from '../../public/Images/png earth 1.svg';
 import user from '../../public/Images/useroneimg.svg';
-
+// import Profile from '../profile-page/page'
 const { Header, Sider, Content } = Layout;
 
 interface MenuItemProps {
@@ -35,8 +35,8 @@ const Sidebar: React.FC = () => {
         switch (selectedMenuItem) {
             case 'home':
                 return <Home />;
-            case 'profile':
-                return <Profile />;
+            // case 'profile':
+            //     return <Profile/>;
             // Add cases for other menu items if needed
             default:
                 return <Home />;
@@ -51,7 +51,7 @@ const Sidebar: React.FC = () => {
                 </div>
                 <Menu  defaultSelectedKeys={['home']} mode="inline">
                     <MenuItem icon={<FaHome size={20} />} text="Home" onClick={() => handleMenuItemClick('home')} />
-                    <MenuItem icon={<FaUser size={20} />} text="Profile" onClick={() => handleMenuItemClick('profile')} />
+                    <MenuItem icon={<FaUser size={20} />} text="Profile" onClick={() => handleMenuItemClick('profile')}  />
                     <MenuItem icon={<FaEnvelope size={20} />} text="Message" />
                     <MenuItem icon={<FaUsers size={20} />} text="Group" />
                     <MenuItem icon={<FaGlobe size={20} />} text="Explore" />
