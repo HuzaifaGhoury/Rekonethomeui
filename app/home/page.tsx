@@ -1,3 +1,5 @@
+import React from 'react';
+import Slider from "react-slick";
 import { FaSearch, FaCog, FaBell, FaEllipsisV, FaRegCommentDots } from 'react-icons/fa';
 import data from '../Data/data.json';
 import Image from 'next/image';
@@ -5,14 +7,54 @@ import user from '../../public/Images/homeimages/useroneimg.svg';
 import { CiHeart } from "react-icons/ci";
 import { TbLocationShare } from "react-icons/tb";
 import { BiBookmarkMinus } from "react-icons/bi";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-  const Home = () => {
+const Home = () => {
   const storyData = data.storyData;
   const postData = data.postData;
 
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  const CustomPrevArrow = ({ onClick }) => (
+    <button className="slick-arrow slick-prev" onClick={onClick}>
+      &lt;
+    </button>
+  );
+
+  const CustomNextArrow = ({ onClick }) => (
+    <button className="slick-arrow slick-next" onClick={onClick}>
+      &gt;
+    </button>
+  );
+
   return (
     <div className="container px-4 w-auto ml-4 ">
-    <div className="relative flex justify-between items-center gap-3 mt-5 w-auto">
+      <div className="relative flex justify-between items-center gap-3 mt-5 w-auto">
         <div className="flex-grow">
           <input
             type="text"
@@ -28,8 +70,8 @@ import { BiBookmarkMinus } from "react-icons/bi";
           <FaCog className="h-6 w-6 text-slate-400" />
         </div>
       </div>
-      <div className="border border-gray-300 mt-7  "></div>
-      <div className="flex  md:flex gap-6 mt-5">
+      <div className="border border-gray-300 mt-7"></div>
+      <Slider {...sliderSettings} className="mt-5" nextArrow={<CustomNextArrow />} prevArrow={<CustomPrevArrow />}>
         {storyData.map(story => (
           <div key={story.id} className="flex flex-col gap-2">
             <div className="w-full h-40 rounded-md ">
@@ -45,7 +87,7 @@ import { BiBookmarkMinus } from "react-icons/bi";
             </div>
           </div>
         ))}
-      </div> 
+      </Slider>
       <div className="flex flex-col gap-6   w-auto mt-20">
     <div className=" shadow-lg  rounded-md h-16">
           <div className="flex items-center gap-3  ">
