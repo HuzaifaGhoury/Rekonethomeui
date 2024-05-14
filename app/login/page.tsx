@@ -19,40 +19,25 @@ export default function page() {
         </div>
         <div className="md:w-[45%] sm:mt-4 w-full p-6">
           <div className="md:hidden  flex justify-center">
-            <Image
-              src={facebook}
-              alt="facebook"
-              width={300}
-              height={300}
-            />
+            <Image src={facebook} alt="facebook" width={300} height={300} />
           </div>
-          <div className="items-center bg-white rounded-lg shadow-md p-6  mt-10 md:w-[420px w-full">
+          <div className="items-center bg-white rounded-lg shadow-md p-6  mt-10 md:w-[450px] w-full">
             <form className="space-y-4">
               <div>
-                <label
-                  htmlFor="emailOrPhone"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email or Phone
-                </label>
                 <input
                   type="text"
                   id="emailOrPhone"
                   name="emailOrPhone"
+                  placeholder="Email address or Phone number"
                   className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
               <div>
-                <label
-                  htmlFor="password"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Password
-                </label>
                 <input
                   type="password"
                   id="password"
                   name="password"
+                  placeholder="Password"
                   className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
@@ -73,9 +58,13 @@ export default function page() {
             <div className="flex justify-center mt-5">
               <button
                 type="submit"
+                
                 className="w-56 py-2 px-4 border border-transparent rounded-md shadow-sm text-white text-[18px] bg-[#42b72a] hover:[#42b72a]font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
+                <a href="/signup">
+
                 Create New Account
+                </a>
               </button>
             </div>
           </div>
