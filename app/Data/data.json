@@ -58,7 +58,22 @@
       "image": "/Images/onlinefriendimg4.svg",
       "storyimage": "/Images/story4.svg"
 
-    }
+    },
+    {
+      "id": 5,
+      "name": "JackGunnar",
+      "image": "/Images/onlinefriendimg1.svg",
+      "storyimage": "/Images/story1.svg"
+},
+{
+  "id": 2,
+  "name": "Jane Foster",
+  "image": "/Images/onlinefriendimg2.svg",
+  "storyimage": "/Images/story2.svg"
+
+  
+
+}
     
     
    ],
