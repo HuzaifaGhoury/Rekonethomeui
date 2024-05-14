@@ -12,9 +12,7 @@ const Home = () => {
 
   return (
     <div className="container px-4 w-auto ml-4 ">
-
-    
-      <div className="relative flex justify-between items-center gap-3 mt-5 w-auto">
+    <div className="relative flex justify-between items-center gap-3 mt-5 w-auto">
         <div className="flex-grow">
           <input
             type="text"
@@ -62,7 +60,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> 
         <div className="w-full md:w-3/4">
           {postData.map(post => (
             <div key={post.id} className="border border-gray-300 rounded-lg shadow-md mb-8">
@@ -112,4 +110,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 
