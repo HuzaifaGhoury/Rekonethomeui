@@ -6,6 +6,9 @@
 // import data from '../Data/data.json';
 // import logo from '../../public/Images/png earth 1.svg';
 // import user from '../../public/Images/useroneimg.svg';
+// import { FaEnvelope, FaGlobe, FaHome, FaTimes } from 'react-icons/fa';
+// import { FaUser, FaUsers } from 'react-icons/fa6';
+// import { Layout } from 'antd';
 // // import Profile from '../profile-page/page'
 // const { Header, Sider, Content } = Layout;
 
@@ -14,7 +17,7 @@
 //     text: string;
 //     onClick?: () => void; 
 // }
- 
+
 // const Sidebar: React.FC = () => {   
 //     const onlineFriends = data.onlineFriends;
 //     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -32,12 +35,12 @@
 //     const renderContent = () => {
 //         switch (selectedMenuItem) {
 //             case 'home':
-//                 return <Home />;
+//                 return "Home";
 //             // case 'profile':
 //             //     return <Profile/>;
 //             // Add cases for other menu items if needed
 //             default:
-//                 return <Home />;
+//                 return "Home";
 //         }
 //     };
 
@@ -103,4 +106,12 @@
 //     </div>
 // );
 
-// export default Sidebar; 
+// // export default Sidebar; 
+
+import React from 'react'
+
+export default function page() {
+  return (
+    <div>page</div>
+  )
+}

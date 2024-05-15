@@ -182,7 +182,7 @@ export default function page() {
               </div>
               <div className="text-center ">
                 <a
-                  href="/login"
+                  href="/"
                   className="text-sm text-blue-600 hover:underline"
                 >
                   Already have an account?

@@ -5,45 +5,66 @@ import { AiOutlineUser } from "react-icons/ai";
 import { GoHomeFill } from "react-icons/go";
 import { IoPeopleSharp } from "react-icons/io5";
 import { MdExplore } from "react-icons/md";
-import { FiMessageSquare } from "react-icons/fi";
+import { FaMessage } from "react-icons/fa6";
+import { MdPerson } from "react-icons/md";
+import { IoMdNotifications } from "react-icons/io";
+import { IoMdSettings } from "react-icons/io";
+import { BiSolidMessage } from "react-icons/bi";
+
+import Image from "next/image";
+import earthLogo from "@/public/Images/sidebarimage/png earth 1.svg";
+import userImage from "@/public/Images/sidebarimage/onlinefriendimg1.svg";
 import Link from "next/link";
 const Sidebar = () => {
   const menus = [
     { name: "Home", link: "/homepage", icon: GoHomeFill },
-    { name: "Profile", link: "/profile", icon: AiOutlineUser },
-    { name: "Messages", link: "/message", icon: FiMessageSquare },
+    { name: "Profile", link: "/profile", icon: MdPerson },
+    { name: "Messages", link: "/message", icon: BiSolidMessage },
     { name: "Group", link: "/group", icon: IoPeopleSharp, margin: true },
     { name: "Explore", link: "/explore", icon: MdExplore },
+    // { name: "Setting", link: "/explore", icon: IoMdSettings },
+    // { name: "notification", link: "/explore", icon: IoMdNotifications },
   ];
   const [open, setOpen] = useState(true);
   return (
     <section className="flex gap-6">
       <div
-        className={`bg-[#0e0e0e] min-h-screen ${
-          open ? "w-72" : "w-16"
-        } duration-500 text-gray-100 px-4`}
+        // className={`bg-pink-600 min-h-screen ${
+        className={`bg-[#F7F7F7] min-h-screen ${
+          open ? "w-72 px-7" : "w-[70px] px-4"
+        } duration-500 text-[#023047] `}
       >
-        <div className="py-3 flex justify-end">
+        <div className="py-4 flex justify-end">
           <HiMenuAlt3
             size={26}
             className="cursor-pointer"
             onClick={() => setOpen(!open)}
           />
         </div>
-        <div className="mt-4 flex flex-col gap-4 relative">
+        <div className=" flex justify-center">
+          <Image src={earthLogo} width={140} height={100} alt="earth logo" />
+        </div>
+        {open && (
+
+        <div className="flex h-12 items-center gap-4">
+          <Image src={userImage} width={40} height={60} alt="user image" />
+          <h2 className="font-bold text-base">Welcome Barry !</h2>
+        </div>
+        )}
+        <div className="mt-4 flex flex-col gap-4 relative ">
           {menus?.map((menu, i) => (
             <Link
               href={menu?.link}
               key={i}
-              className={` ${
-                menu?.margin && "mt-5"
-              } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
+              className={` 
+               
+               group flex items-center  h-12  text-base gap-3.5 font-medium p-2 hover:text-white hover:bg-[#1A5EFF] rounded-md`}
             >
               <div>{React.createElement(menu?.icon, { size: "20" })}</div>
               <h2
-                style={{
-                  transitionDelay: `${i + 3}00ms`,
-                }}
+                // style={{
+                //   transitionDelay: `${i + 3}00ms`,
+                // }}
                 className={`whitespace-pre duration-500 ${
                   !open && "opacity-0 translate-x-28 overflow-hidden"
                 }`}
@@ -61,7 +82,6 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
-    
     </section>
   );
 };
