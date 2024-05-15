@@ -1,0 +1,19 @@
+.ant-tabs-tab.ant-tabs-tab-active {
+    border-bottom: none !important;
+    z-index: 2;
+}
+.custom-tabs .ant-tabs-tab {
+    margin-right: 10px; /* Adjust this value to add space between tab names */
+  }
+  :where(.css-dev-only-do-not-override-1okl62o).ant-tabs >.ant-tabs-nav .ant-tabs-nav-list, :where(.css-dev-only-do-not-override-1okl62o).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list {
+    position: relative;
+    display: flex;
+    transition: opacity 0.3s;
+    gap: 26px;
+    
+}
+:where(.css-dev-only-do-not-override-1okl62o).ant-tabs .ant-tabs-tab-btn {
+    outline: none;
+    transition: all 0.3s;
+    font-size: 17px;
+}

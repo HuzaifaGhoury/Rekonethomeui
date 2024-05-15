@@ -1,6 +1,7 @@
 import React from "react";
 import facebook from "@/public/Images/logo/facebook.svg";
 import Image from "next/image";
+
 export default function page() {
   return (
     <div>
