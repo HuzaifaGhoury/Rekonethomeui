@@ -4,10 +4,10 @@ import Sidebar from './sidebar/page';
 const page = () => {
   return (
     <div>
+<Sidebar/>
 
-      <Sidebar/>
     </div>
   )
 }
 
-export default page;
+export default page;    
