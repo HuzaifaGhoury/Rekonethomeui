@@ -23,8 +23,8 @@ const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.
     { name: "Messages", link: "/message", icon: BiSolidMessage },
     { name: "Group", link: "/group", icon: IoPeopleSharp, margin: true },
     { name: "Explore", link: "/explore", icon: MdExplore },
-    { name: "Setting", link: "/explore", icon: IoMdSettings },
-    { name: "notification", link: "/explore", icon: IoMdNotifications },
+    { name: "Setting", link: "/setting", icon: IoMdSettings },
+    { name: "notification", link: "/notification", icon: IoMdNotifications },
   ];
 
   return (

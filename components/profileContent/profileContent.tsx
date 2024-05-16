@@ -25,9 +25,9 @@ export default function ProfileContent() {
   ];
 
   return (
-    <div className="flex justify-between">
-      <div className="w-[39%]">
-        <div className="bg-[#1A5EFF] pt-2 pb-10 rounded-3xl">
+    <div className=" md:flex block  justify-between ">
+      <div className="md:w-[39%]">
+        <div className="bg-[rgb(26,94,255)] md:mt-1 mt-[226px] pt-2 pb-10 rounded-3xl">
           <h1 className="text-white text-xl font-bold mx-5 my-4">INTRO</h1>
           <div className="bg-white w-full h-10 text-center text-lg font-semibold flex items-center justify-center">
             Edit Details
@@ -39,7 +39,7 @@ export default function ProfileContent() {
             Edit Featured
           </div>
         </div>
-        <div className="bg-[#EEEAEA] p-7 h-auto mt-7 rounded-3xl">
+        <div className="bg-[#EEEAEA] p-7 h-auto my-3  md:my-6 rounded-3xl">
           <h1 className="text-black text-xl font-bold">PHOTOS</h1>
           <div className="flex flex-wrap justify-start gap-4 mt-2">
             {photos.map((photo, index) => (
@@ -55,7 +55,7 @@ export default function ProfileContent() {
           </div>
         </div>
       </div>
-      <div className=" w-[54%]">
+      <div className=" md:w-[54%]">
         <div className="bg-[#1A5EFF] p-3 pb-7 rounded-2xl flex justify-center items-center text-center">
           <div className="flex relative mx-8  w-full">
             <Input
@@ -80,17 +80,17 @@ export default function ProfileContent() {
               height={70}
             />
             <div>
-              <h1 className="text-lg font-semibold">
-                <span className="text-xl font-bold text-[#1A5EFF]">Barry </span>{" "}
+              <h1 className="md:text-lg text-base font-semibold">
+                <span className="md:text-xl text-base font-bold text-[#1A5EFF]">Barry </span>{" "}
                 shared a post memory
               </h1>
               <h3 className="text-sm text-[#6D6C6C]">April 27 at 9:22 pm</h3>
             </div>
           </div>
-          <div className=" mx-16 my-4 ">
+          <div className=" md:mx-16 my-3 ">
             <Image src={memory} alt="memory" className=" h-80 w-full" />
             <hr className="my-4 border-[#000000]" />
-            <div className="flex justify-between px-20 text-base font-medium">
+            <div className="flex justify-between md:px-20 text-base font-medium">
               <h2 className="text-[#1A5EFF]">Like</h2>
               <h2>Comment</h2>
               <h2>Share</h2>
