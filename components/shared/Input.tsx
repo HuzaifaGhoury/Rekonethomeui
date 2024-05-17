@@ -11,12 +11,12 @@ export default function InputField({
   label: string;
 }) {
   return (
-    <div>
-      <label className="text-sm font-medium ">{label}</label>
+    <div style={{ width: '100%' }}>
+      <label className="text-sm font-medium">{label}</label>
       <br />
       <Input
-        className=" h-12 border my-2 bg-transparent border-[#EAEAEA] text-base"
-        style={{ width: 340 }}
+        className="h-12 border my-2 bg-transparent border-[#EAEAEA] text-base"
+        style={{ width: '100%' }}
         placeholder={placeholder}
         type={type}
       />

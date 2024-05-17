@@ -50,7 +50,7 @@ export default function AccountSetting() {
             Lorem Ipsum is simply dummy text.
           </h3>
           <div>
-            <div className="flex justify-between">
+            <div className="flex gap-7 justify-between">
               <InputField
                 label="Full Name"
                 placeholder="Your Name"
@@ -86,7 +86,7 @@ export default function AccountSetting() {
           <h3 className="text-base font-normal text-[#A0A0A0] my-1 mb-5">
             Lorem Ipsum is simply dummy text.
           </h3>
-          <div className="flex justify-between">
+          <div className="flex gap-7 justify-between">
             <InputField
               label="Phone Number"
               placeholder="Phone Number"
@@ -94,7 +94,7 @@ export default function AccountSetting() {
             />
             <InputField label="Role" placeholder="Type your Role" type="text" />
           </div>{" "}
-          <div className="flex justify-between">
+          <div className="flex gap-7 justify-between">
             <InputField
               label="Location"
               placeholder="Type your Location"
