@@ -1,29 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import photo1 from "../../public/Images/profileImages/profilephoto1.svg";
-import photo2 from "../../public/Images/profileImages/profilephoto2.svg";
-import photo3 from "../../public/Images/profileImages/profilephoto3.svg";
-import photo4 from "../../public/Images/profileImages/profilephoto4.svg";
-import photo5 from "../../public/Images/profileImages/profilephoto5.svg";
-import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
-import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
-import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
+// import photo1 from "../../public/Images/profileImages/profilephoto1.svg";
+// import photo2 from "../../public/Images/profileImages/profilephoto2.svg";
+// import photo3 from "../../public/Images/profileImages/profilephoto3.svg";
+// import photo4 from "../../public/Images/profileImages/profilephoto4.svg";
+// import photo5 from "../../public/Images/profileImages/profilephoto5.svg";
+// import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
+// import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
+// import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
 import memory from "../../public/Images/profileImages/Rectangle 31 (1).png";
 import inputPerson from "../../public/Images/profileImages/Mask group (1).svg";
 import { Input } from "antd";
 export default function ProfileContent() {
   // Array of photo URLs
-  const photos = [
-    photo1,
-    photo2,
-    photo3,
-    photo4,
-    photo5,
-    photo6,
-    photo7,
-    photo8,
-  ];
-console.log(photos,'photos')
+  // const photos = [
+  //   photo1,
+  //   photo2,
+  //   photo3,
+  //   photo4,
+  //   photo5,
+  //   photo6,
+  //   photo7,
+  //   photo8,
+  // ];
   return (
     <div className=" md:flex block  justify-between ">
       <div className="md:w-[39%]">
@@ -41,7 +40,7 @@ console.log(photos,'photos')
         </div>
         <div className="bg-[#EEEAEA] p-7 h-auto my-3  md:my-6 rounded-3xl">
           <h1 className="text-black text-xl font-bold">PHOTOS</h1>
-          <div className="flex flex-wrap justify-start gap-4 mt-2">
+          {/* <div className="flex flex-wrap justify-start gap-4 mt-2">
             {photos.map((photo, index) => (
               <div key={index} className="w-2/12">
                 <Image
@@ -52,7 +51,7 @@ console.log(photos,'photos')
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className=" md:w-[54%]">
