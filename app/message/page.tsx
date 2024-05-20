@@ -31,7 +31,7 @@ export default function ProfilePhoto() {
             showInfo={showInfo}
           />
         )}
-        {showInfo && <ShowInfo userMessage={userMessage} />}
+        {showInfo && userMessage && <ShowInfo userMessage={userMessage} />}
       </div>
     </DefaultLayout>
   );
