@@ -44,9 +44,10 @@ export default function page() {
               </div>
               <button
                 type="submit"
+
                 className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white text-xl bg-blue-600 hover:bg-blue-700 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
-                Log In
+                <a href="/homepage">Log In</a>
               </button>
             </form>
             <div className="my-4 text-center ">

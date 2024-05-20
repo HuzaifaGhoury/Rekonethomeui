@@ -9,7 +9,6 @@
       "id": 2,
       "name": "Jane Foster",
       "image": "/Images/sidebarimage/onlinefriendimg2.svg"
-
     },
     {
       "id": 3,
@@ -40,32 +39,24 @@
       "name": "JackGunnar",
       "image": "/Images/sidebarimage/onlinefriendimg1.svg",
       "storyimage": "/Images/homeimages/story1.svg"
-
-
     },
     {
       "id": 2,
       "name": "Jane Foster",
       "image": "/Images/sidebarimage/onlinefriendimg2.svg",
       "storyimage": "/Images/homeimages/story2.svg"
-
-      
-
     },
     {
       "id": 3,
       "name": "Lee Zheng",
       "image": "/Images/sidebarimage/onlinefriendimg3.svg",
       "storyimage": "/Images/homeimages/story3.svg"
-
-
     },
     {
       "id": 4,
       "name": "John Dhoe",
       "image": "/Images/sidebarimage/onlinefriendimg4.svg",
       "storyimage": "/Images/homeimages/story4.svg"
-
     }
     
    ],
@@ -96,19 +87,19 @@
   "description": "This year was so great, 2025 I'm coming!!"
        }
        ],
+       
        "explorecardData":[
         {
-          "id": 1,
+      "id": 1,
       "mainheading": "Educational Institute Near You",
       "headingtwo": "Students Near You",
       "image": "/Images/exploreimages/card1image.svg",
       "schoolname":"ABC School",
       "contentone":"Yogyakarta",
-      "contenttwo":"2,351",
+      "contenttwo":"2,351", 
       "contentthree":"rta",
       "contentfour":"Members",
       "buttoncontent":"join Group"
-
-      }
-       ]
+}
+]
 }

@@ -18,7 +18,7 @@ import Link from "next/link";
 
 const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
   const menus = [
-    { name: "Home", link: "/homepage", icon: GoHomeFill },
+    { name: "Home", link: "/home", icon: GoHomeFill },
     { name: "Profile", link: "/profile", icon: MdPerson },
     { name: "Messages", link: "/message", icon: BiSolidMessage },
     { name: "Group", link: "/group", icon: IoPeopleSharp, margin: true },

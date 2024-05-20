@@ -1,13 +1,12 @@
 // ExploreContent.js
 import React from 'react';
-import data from '../../shared/JSON/data.json'; // Import all exports from data.js
+import data from '../../shared/JSON/data.json'; 
 import Image from 'next/image';
 import { Button } from 'antd';
 
 
 const ExploreContent = () => {
-    const explorecardData = data.explorecardData; // Access the postData array from the imported data
-
+    const explorecardData = data.explorecardData; 
     return (
         <div className='w-full bg-[#1E75FF] h-auto rounded-2xl p-4'>
             {explorecardData.map(card => (
