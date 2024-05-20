@@ -1,81 +1,137 @@
 {
-    "NotificationToday": [
-      {
-        "id": 1,
-        "title": "Jason likes your post",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "time": "10:00"
-      },
-      {
-        "id": 2,
-        "title": "Lamar Comment on your photo",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "time": "11:00"
-      },
-      {
-        "id": 3,
-        "title": "Carlie Smith Likes your school page",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "time": "12:00"
-      },
-      {
-        "id": 4,
-        "title": "Jason likes your post",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "time": "10:00"
-      }
-    ],
-    "Favorites":[
-      {
-        "id":1,
-        "name":"Eleanor pega",
-        "text":"type somthing...",
-        "time":"10:00 AM"
-      },
-      {
-        "id":2,
-        "name":"Dianne Team",
-        "text":"So, what's your plan this weekend?",
-        "time":"10:00 AM"
-      },
-      {
-        "id":3,
-        "name":"Theresa Webb",
-        "text":"What's the progress on that task?",
-        "time":"10:00 AM"
-      },
-      {
-        "id":4,
-        "name":"Robert Fox",
-        "text":"type somthing...",
-        "time":"09:00 AM"
-      }
-    ],
-    "Chats":[
-      {
-        "id":1,
-        "name":"Marvin McKinney",
-        "text":"I went there yesterday.",
-        "time":"10:00 AM"
-      },
-      {
-        "id":2,
-        "name":"Ralph Edwards",
-        "text":"I went there yesterday",
-        "time":"10:00 AM"
-      },
-      {
-        "id":3,
-        "name":"Cameron Will Team",
-        "text":"No, I can't come tomorrow.",
-        "time":"10:00 AM"
-      },
-      {
-        "id":4,
-        "name":"Jenny Wilson",
-        "text":"IDK what else is there to do",
-        "time":"09:00 AM"
-      }
-    ]
-  }
-  
+  "NotificationToday": [
+    {
+      "id": 1,
+      "title": "Jason likes your post",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "time": "10:00"
+    },
+    {
+      "id": 2,
+      "title": "Lamar Comment on your photo",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "time": "11:00"
+    },
+    {
+      "id": 3,
+      "title": "Carlie Smith Likes your school page",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "time": "12:00"
+    },
+    {
+      "id": 4,
+      "title": "Jason likes your post",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "time": "10:00"
+    }
+  ],
+  "Favorites": [
+    {
+      "id": 1,
+      "name": "Eleanor pega",
+      "text": "type somthing...",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "Dianne Team",
+      "text": "So, what's your plan this weekend?",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 3,
+      "name": "Theresa Webb",
+      "text": "What's the progress on that task?",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 4,
+      "name": "Robert Fox",
+      "text": "type somthing...",
+      "time": "09:00 AM"
+    }
+  ],
+  "Chats": [
+    {
+      "id": 1,
+      "name": "Marvin McKinney",
+      "text": "I went there yesterday.",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "Ralph Edwards",
+      "text": "I went there yesterday",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 3,
+      "name": "Cameron Will Team",
+      "text": "No, I can't come tomorrow.",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 4,
+      "name": "Jenny Wilson",
+      "text": "IDK what else is there to do",
+      "time": "09:00 AM"
+    }
+  ],
+  "ReciveFileData": [
+    {
+      "id": 1,
+      "filename": "legal-tenure.pdf",
+      "date": "12/12/2022",
+      "size": "1.2 Kb"
+    },
+    {
+      "id": 2,
+      "filename": "DF_ASKD_UED_changed_2393.pdf",
+      "date": "12/12/2022",
+      "size": "1.2 Kb"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "name": "Marvin McKinney",
+      "text": "I went there yesterday.",
+      "role": "sender",
+      "time": "10:00 AM",
+      "timeElapsed": "1 hour ago"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Parker",
+      "text": "How was it?",
+      "role": "receiver",
+      "time": "10:05 AM",
+      "timeElapsed": "55 minutes ago"
+    },
+    {
+      "id": 3,
+      "name": "Marvin McKinney",
+      "text": "It was great! Highly recommend it.",
+      "role": "sender",
+      "time": "10:10 AM",
+      "timeElapsed": "50 minutes ago"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Parker",
+      "text": "Thanks for the recommendation!",
+      "role": "receiver",
+      "time": "10:15 AM",
+      "timeElapsed": "45 minutes ago"
+    },
+    {
+      "id": 5,
+      "name": "Marvin McKinney",
+      "text": "No problem! Let me know if you need any more tips.",
+      "role": "sender",
+      "time": "10:20 AM",
+      "timeElapsed": "40 minutes ago"
+    }
+
+  ]
+}

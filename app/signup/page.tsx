@@ -45,12 +45,12 @@ export default function page() {
   return (
     <div>
       <div className="md:flex flex-col justify-center items-center gap-1.50 bg-[#f0f2f5] h-screen w-[100%] p-5">
-        <div className="md:block hidden">
+        {/* <div className="md:block hidden">
           <Image src={facebook} alt="facebook" width={400} height={400} />
         </div>
         <div className="md:hidden  flex justify-center">
           <Image src={facebook} alt="facebook" width={200} height={200} />
-        </div>
+        </div> */}
         <div className="md:w-[45%] sm:mt-4 w-full flex justify-center ">
           <div className=" bg-white rounded-lg shadow-md md:w-[530px] w-full ">
             <div className="p-3 border-b-2 border-gray text-center ">
@@ -175,7 +175,7 @@ export default function page() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="w-56 mt-2 py-2 px-4 border border-transparent rounded-md shadow-sm text-white text-[18px] bg-[#42b72a] hover:[#42b72a] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  className="w-56 mt-2 py-2 px-4 border border-transparent rounded-3xl shadow-sm text-white text-[18px] bg-[#1A5EFF] hover:[#1A5EFF] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   Sign up
                 </button>

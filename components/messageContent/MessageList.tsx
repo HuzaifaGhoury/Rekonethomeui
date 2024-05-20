@@ -6,6 +6,8 @@ import MessageSearchIcon from "@/public/customIcon/MessageSearchIcon";
 import chatData from "@/shared/JSON/Index.json";
 import Image from "next/image";
 import profile from "@/public/Images/messageImage/chatDP.svg";
+import { useMediaQuery } from 'react-responsive';
+
 interface UserMessage {
     id: number;
     name: string;
@@ -17,6 +19,8 @@ interface MessageListProps {
     setUserMessage: (data: UserMessage) => void;
     setShowInfo: (show: boolean) => void;
   }
+  const useIsMobile = () => useMediaQuery({ maxWidth: 768 });
+
 const MessageList: React.FC< MessageListProps> = ({ setUserMessage ,setShowInfo}) => {
   const handleClick = (data: {
     id: number;
@@ -27,24 +31,24 @@ const MessageList: React.FC< MessageListProps> = ({ setUserMessage ,setShowInfo}
     setUserMessage(data);
     setShowInfo(false)
   };
-
+  const isMobile = useIsMobile();
   return (
     <>
-    <div className="w-[30%] px-6  border-x border-[#D6DFF6]">
+    <div className={` md:w-[30%] w-[100%]  px-4 "border-x border-[#D6DFF6]`}>
       <div className="flex gap-4 items-center">
         <ActiveProfile />
         <h1 className="font-normal text-2xl">Barry</h1>
       </div>
       <div className="flex gap-2  my-6 justify-between w-full ">
-        <div className="border border-[#D6DFF6] p-2  rounded-xl items-center flex gap-1">
+        <div className="border border-[#D6DFF6] p-2 w-[86%] rounded-xl items-center flex gap-1">
           <MessageSearchIcon />
           <Input
-            className="w-72"
+            // className="w-30%"
             placeholder="People, groups, messeages..."
             style={{ border: "none", fontSize: "17px" }}
           />
         </div>
-        <div className="border border-[#D6DFF6] w-14 justify-center p-2 rounded-xl flex items-center">
+        <div className="border border-[#D6DFF6] w-[13%] justify-center p-2 rounded-xl flex items-center">
           <BookMarkIcon />
         </div>
       </div>
