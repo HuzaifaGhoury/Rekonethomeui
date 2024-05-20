@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import photo1 from "@/public/Images/profileImages/profilephoto1.svg";
-import photo2 from "@/public/Images/profileImages/profilephoto2.svg";
-import photo3 from "@/public/Images/profileImages/profilephoto3.svg";
-import photo4 from "@/public/Images/profileImages/profilephoto4.svg";
-import photo5 from "@/public/Images/profileImages/profilephoto5.svg";
-import photo6 from "@/public/Images/profileImages/profilephoto6.svg";
-import photo7 from "@/public/Images/profileImages/profilephoto7.svg";
-import photo8 from "@/public/Images/profileImages/profilephoto8.svg";
-import memory from "@/public/Images/profileImages/Rectangle 31 (1).png";
+import photo1 from "../../public/Images/profileImages/profilephoto1.svg";
+import photo2 from "../../public/Images/profileImages/profilephoto2.svg";
+import photo3 from "../../public/Images/profileImages/profilephoto3.svg";
+import photo4 from "../../public/Images/profileImages/profilephoto4.svg";
+import photo5 from "../../public/Images/profileImages/profilephoto5.svg";
+import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
+import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
+import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
+import memory from "../../public/Images/profileImages/Rectangle 31 (1).png";
 import inputPerson from "@/public/Images/profileImages/Mask group (1).svg";
 import { Input } from "antd";
 export default function ProfileContent() {
