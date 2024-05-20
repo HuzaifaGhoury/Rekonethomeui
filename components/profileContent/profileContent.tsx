@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import photoProfile from "@/public/Images/profileImages/profilephoto1.svg";
-import profileSecond from "@/public/Images/profileImages/profilephoto2.svg"
+import photoProfile from "@/public/Images/profileImages/Rectangle 31 (1).png";
+
+import profileSecond from "@/public/Images/profileImages/Rectangle 32.png"
 // import photo1 from "../../public/Images/profileImages/profilephoto1.svg";
 // import photo2 from "../../public/Images/profileImages/profilephoto2.svg";
 // import photo3 from "../../public/Images/profileImages/profilephoto3.svg";
