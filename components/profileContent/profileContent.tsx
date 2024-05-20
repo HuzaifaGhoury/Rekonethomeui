@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import photo1 from "../../public/Images/profileImages/profilephoto1.svg";
-import photo2 from "../../public/Images/profileImages/profilephoto2.svg";
-import photo3 from "../../public/Images/profileImages/profilephoto3.svg";
-import photo4 from "../../public/Images/profileImages/profilephoto4.svg";
-import photo5 from "../../public/Images/profileImages/profilephoto5.svg";
-import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
-import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
-import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
+import photo1 from "../../public/Images/profileImages/Rectangle 31.png";
+import photo2 from "../../public/Images/profileImages/Rectangle 32.png";
+import photo3 from "../../public/Images/profileImages/Rectangle 35.png";
+import photo4 from "../../public/Images/profileImages/Rectangle 36.png";
+// import photo5 from "../../public/Images/profileImages/Rectangle 38 (1).png";
+// import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
+// import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
+// import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
 import memory from "../../public/Images/profileImages/Rectangle 31 (1).png";
-import inputPerson from "../../public/Images/profileImages/Mask group (1).svg";
+import inputPerson from "../../public/Images/profileImages/Mask group.png";
 import { Input } from "antd";
 export default function ProfileContent() {
   // Array of photo URLs
@@ -18,12 +18,11 @@ export default function ProfileContent() {
     photo2,
     photo3,
     photo4,
-    photo5,
-    photo6,
-    photo7,
-    photo8,
+    photo1,
+    photo2,
+    photo3,
+    photo4,
   ];
-console.log(photos,'photos')
   return (
     <div className=" md:flex block  justify-between ">
       <div className="md:w-[39%]">
