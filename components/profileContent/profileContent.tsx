@@ -9,7 +9,7 @@ import photo6 from "../../public/Images/profileImages/profilephoto6.svg";
 import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
 import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
 import memory from "../../public/Images/profileImages/Rectangle 31 (1).png";
-import inputPerson from "@/public/Images/profileImages/Mask group (1).svg";
+import inputPerson from "../../public/Images/profileImages/Mask group (1).svg";
 import { Input } from "antd";
 export default function ProfileContent() {
   // Array of photo URLs
@@ -23,7 +23,7 @@ export default function ProfileContent() {
     photo7,
     photo8,
   ];
-
+console.log(photos,'photos')
   return (
     <div className=" md:flex block  justify-between ">
       <div className="md:w-[39%]">
@@ -45,7 +45,7 @@ export default function ProfileContent() {
             {photos.map((photo, index) => (
               <div key={index} className="w-2/12">
                 <Image
-                  src={photo}
+                  src={photo.src}
                   alt={`photo-${index}`}
                   width={80}
                   height={100}
