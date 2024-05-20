@@ -9,7 +9,7 @@ import Image from "next/image";
 // import photo7 from "../../public/Images/profileImages/profilephoto7.svg";
 // import photo8 from "../../public/Images/profileImages/profilephoto8.svg";
 import memory from "../../public/Images/profileImages/Rectangle 31 (1).png";
-import inputPerson from "../../public/Images/profileImages/Mask group (1).svg";
+// import inputPerson from "../../public/Images/profileImages/Mask group (1).svg";
 import { Input } from "antd";
 export default function ProfileContent() {
   // Array of photo URLs
@@ -61,23 +61,23 @@ export default function ProfileContent() {
               placeholder="What's on your mind?"
               className="mt-4  h-14 pl-14 bg-[#F7F7F7] rounded-3xl"
             />
-            <Image
+            {/* <Image
               src={inputPerson}
               alt="input person"
               width={80}
               className="absolute left-[-29px] top-1 "
               height={70}
-            />
+            /> */}
           </div>
         </div>
         <div className="bg-[#EEEAEA] mt-5 rounded-2xl p-3">
           <div className="flex gap-2 items-center">
-            <Image
+            {/* <Image
               src={inputPerson}
               alt="input person"
               width={70}
               height={70}
-            />
+            /> */}
             <div>
               <h1 className="md:text-lg text-base font-semibold">
                 <span className="md:text-xl text-base font-bold text-[#1A5EFF]">Barry </span>{" "}
@@ -100,13 +100,13 @@ export default function ProfileContent() {
               placeholder="What's on your mind?"
               className="mt-4  h-12 pl-14 bg-[#F7F7F7] rounded-3xl"
             />
-            <Image
+            {/* <Image
               src={inputPerson}
               alt="input person"
               width={70}
               className="absolute left-[-29px] top-2 "
               height={70}
-            />
+            /> */}
           </div>
           </div>
         </div>
