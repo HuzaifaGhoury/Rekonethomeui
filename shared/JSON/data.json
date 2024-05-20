@@ -1,0 +1,105 @@
+{
+  "onlineFriends": [
+    {
+      "id": 1,
+      "name": "Jack Gunnar",
+      "image": "/Images/sidebarimage/onlinefriendimg1.svg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Foster",
+      "image": "/Images/sidebarimage/onlinefriendimg2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Lee Zheng",
+      "image": "/Images/sidebarimage/onlinefriendimg3.svg"
+    },
+    {
+      "id": 4,
+      "name": "Rose",
+      "image": "/Images/sidebarimage/onlinefriendimg4.svg"
+    },
+    {
+      "id": 5,
+      "name": "John Dhoe",
+      "image": "/Images/sidebarimage/onlinefriendimg5.svg"
+    }
+  ],
+  "userData":[
+    {
+      "id":1,
+      "username": "Wellcome Barry",
+      "userimage": "/Images/homeimages/useroneimg.svg"
+    }
+  ],
+  "storyData": [
+    {
+      "id": 1,
+      "name": "JackGunnar",
+      "image": "/Images/sidebarimage/onlinefriendimg1.svg",
+      "storyimage": "/Images/homeimages/story1.svg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Foster",
+      "image": "/Images/sidebarimage/onlinefriendimg2.svg",
+      "storyimage": "/Images/homeimages/story2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Lee Zheng",
+      "image": "/Images/sidebarimage/onlinefriendimg3.svg",
+      "storyimage": "/Images/homeimages/story3.svg"
+    },
+    {
+      "id": 4,
+      "name": "John Dhoe",
+      "image": "/Images/sidebarimage/onlinefriendimg4.svg",
+      "storyimage": "/Images/homeimages/story4.svg"
+    }
+    
+   ],
+   "postData": [
+{
+  "id": 1,
+  "name": "Barry Allen",
+  "activeseen": "25 minutes ago",
+  "galleryone": "/Images/postimage/gallery1.svg",
+  "gallerytwo": "/Images/postimage/gallery2.svg",
+  "gallerythree": "/Images/postimage/gallery3.svg",
+  "image": "/Images/postimage/postimg.svg",
+  "description": "Take a breath people, we need oxygen, Stay Green!",
+  "likes":"12"
+   }
+   ],
+   "comentData": [
+    {
+      "id": 1,
+      "name": "John Swatrz",
+      "activeseen": "1 Hour ago",
+      "profileimg": "/Images/commentimages/profileimg.svg",
+      "user": "/Images/commentimages/userimg.svg",
+      "userone": "/Images/commentimages/user1img.svg",
+      "usertwo": "/Images/commentimages/user2.svg",
+      "userthree": "/Images/commentimages/user3.svg",
+      "userfour": "/Images/commentimages/user4.svg",
+  "description": "This year was so great, 2025 I'm coming!!"
+       }
+       ],
+       
+       "explorecardData":[
+        {
+      "id": 1,
+      "mainheading": "Educational Institute Near You",
+      "headingtwo": "Students Near You",
+      "image": "/Images/exploreimages/card1image.svg",
+      "schoolname":"ABC School",
+      "contentone":"Yogyakarta",
+      "contenttwo":"2,351", 
+      "contentthree":"rta",
+      "contentfour":"Members",
+      "buttoncontent":"join Group"
+}
+]
+}

@@ -11,5 +11,5 @@ export default function page() {
         <ProfileContent />
       </div>
     </DefaultLayout>
-  );
+)
 }

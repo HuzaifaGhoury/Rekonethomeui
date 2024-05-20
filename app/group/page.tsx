@@ -5,3 +5,5 @@ export default function page() {
     <div>page</div>
   )
 }
+
+export default page
