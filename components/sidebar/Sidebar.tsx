@@ -10,13 +10,20 @@ import { MdPerson } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { BiSolidMessage } from "react-icons/bi";
+import { TbLogout } from "react-icons/tb";
 
 import Image from "next/image";
 import earthLogo from "@/public/Images/sidebarimage/png earth 1.svg";
 import userImage from "@/public/Images/sidebarimage/onlinefriendimg1.svg";
 import Link from "next/link";
 
-const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.SetStateAction<boolean>>}) => {
+const Sidebar = ({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const menus = [
     { name: "Home", link: "/home", icon: GoHomeFill },
     { name: "Profile", link: "/profile", icon: MdPerson },
@@ -34,7 +41,7 @@ const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.
           open ? "w-72 px-7" : "w-[70px] px-4"
         } duration-500 text-[#023047] relative`}
       >
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-16 my-4">
           <Image src={earthLogo} width={140} height={100} alt="earth logo" />
         </div>
         {open && (
@@ -49,11 +56,15 @@ const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.
               href={menu?.link}
               key={i}
               className={` 
-               group flex items-center h-12 text-base gap-3.5 font-medium p-2 hover:text-white hover:bg-[#1A5EFF] rounded-md`}
+      group flex py-6 items-center h-12 text-base gap-3.5 text-[#B8C3E1] font-base p-2 hover:text-white hover:bg-[#1A5EFF] rounded-md`}
             >
-              <div>{React.createElement(menu?.icon, { size: "20" })}</div>
+              <div className="group-hover:text-white">
+                {React.createElement(menu?.icon, {
+                  size: "25",
+                })}
+              </div>
               <h2
-                className={`whitespace-pre duration-500 ${
+                className={`whitespace-pre duration-500 text-[#B8C3E1] group-hover:text-white ${
                   !open && "opacity-0 translate-x-28 overflow-hidden"
                 }`}
               >
@@ -62,19 +73,27 @@ const Sidebar = ({open, setOpen}: {open: boolean, setOpen: React.Dispatch<React.
               <h2
                 className={`${
                   open && "hidden"
-                } absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit`}
+                } absolute left-48 bg-white font-semibold text-gray-500 whitespace-pre rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit group-hover:text-white`}
               >
                 {menu?.name}
               </h2>
             </Link>
           ))}
         </div>
-        <div className="absolute bottom-4 left-4">
-          <HiMenuAlt3
-            size={26}
-            className="cursor-pointer"
-            onClick={() => setOpen(!open)}
-          />
+        <div
+          className={` ${
+            open ? "w-[80%]" : "w-[60%]"
+          }  absolute w-[80%] bottom-4 `}
+        >
+          <div className="flex justify-end">
+            <div className="bg-[#1A5EFF] p-2 rounded-md">
+              <TbLogout
+                size={35}
+                className="cursor-pointer text-white"
+                onClick={() => setOpen(!open)}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

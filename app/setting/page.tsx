@@ -6,9 +6,9 @@ import SettingContent from "@/components/settingContent/SettingContent";
 export default function page() {
   return (
     <DefaultLayout>
-      <div className=" p-6">
+      <div className="md:p-6 p-1">
         <Header />
-        <SettingContent/>
+        <SettingContent />
       </div>
     </DefaultLayout>
   );

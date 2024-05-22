@@ -6,7 +6,7 @@ import ActiveProfile from "@/components/shared/AciveProfile";
 import MessageList from "@/components/messageContent/MessageList";
 import MessagesContent from "@/components/messageContent/MessagesContent";
 import ShowInfo from "@/components/messageContent/ShowInfo";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 interface UserMessage {
   id: number;
@@ -24,20 +24,21 @@ export default function ProfilePhoto() {
   return (
     <DefaultLayout>
       <div className="flex w-full">
-      {!isMobile || !userMessage ? (
-          // <div className="md:block w-full ">
-            <MessageList setUserMessage={setUserMessage} setShowInfo={setShowInfo} />
-          // </div>
+        {!isMobile || !userMessage ? (
+          <MessageList
+            setUserMessage={setUserMessage}
+            setShowInfo={setShowInfo}
+          />
         ) : null}
-        {userMessage && Object.keys(userMessage).length > 0 && (!isMobile || !showInfo) && (
-          
+        {userMessage &&
+          Object.keys(userMessage).length > 0 &&
+          (!isMobile || !showInfo) && (
             <MessagesContent
               userMessage={userMessage}
               setShowInfo={setShowInfo}
               showInfo={showInfo}
             />
-  
-        )}
+          )}
         {showInfo && userMessage && <ShowInfo userMessage={userMessage} />}
       </div>
     </DefaultLayout>

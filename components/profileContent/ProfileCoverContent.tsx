@@ -77,7 +77,7 @@ export default function ProfileCoverContent() {
                 alt="profilepic"
                 width={130}
                 height={100}
-                              />
+              />
               <div className="mb-[10px]">
                 <h2 className="text-4xl font-bold text-[#1A5EFF]">Barry</h2>
                 <h4 className="text-xl font-normal">Future Engineer</h4>

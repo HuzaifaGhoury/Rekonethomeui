@@ -19,16 +19,16 @@ export default function AccountSetting() {
     }
   };
   return (
-    <div className="border rounded-md border-[#EAEAEA] my-4 p-6 ">
+    <div className="border rounded-md border-[#EAEAEA] my-4 md-p-6 p-3">
       <div className="flex justify-between items-center border-b pb-5 border-[#EAEAEA] ">
-        <div className="flex gap-3 items-center ">
+        <div className="flex md:gap-3 gap-1 items-center  ">
           <Image src={profilePic} alt="profilepic" width={70} height={100} />
-          <h2 className="font-medium text-2xl mt-[-4px]">Barry</h2>
+          <h2 className="font-medium md:text-2xl mt-[-4px]">Barry</h2>
         </div>
         <div>
           <button
             onClick={handleButtonClick}
-            className="text-[#1A5EFF] w-52 text-lg font-normal py-3 rounded-lg"
+            className="text-[#1A5EFF] md:w-52 w-full px-3 md:px-0 md:text-lg text-base font-normal py-3 rounded-lg"
             style={{ backgroundColor: "rgba(26, 94, 255, 0.1)" }}
           >
             Upload new picture
@@ -42,15 +42,15 @@ export default function AccountSetting() {
           />
         </div>
       </div>
-      <div className="flex my-5 justify-between">
+      <div className=" md:flex my-5 justify-between">
         {/*Basic information */}
-        <div className="w-[48%] ">
+        <div className="md:w-[48%] w-full">
           <h1 className="font-medium text-lg ">Basic Information</h1>
           <h3 className="text-base font-normal text-[#A0A0A0] my-1 mb-5">
             Lorem Ipsum is simply dummy text.
           </h3>
           <div>
-            <div className="flex gap-7 justify-between">
+            <div className="md:flex gap-7 justify-between">
               <InputField
                 label="Full Name"
                 placeholder="Your Name"
@@ -80,13 +80,13 @@ export default function AccountSetting() {
           </div>
         </div>
         {/* More information */}
-        <div className="w-[48%] ">
+        <div className="md:w-[48%] w-full">
           {" "}
-          <h1 className="font-medium text-lg">More Information</h1>
+          <h1 className="font-medium text-lg md:mt-0 mt-2">More Information</h1>
           <h3 className="text-base font-normal text-[#A0A0A0] my-1 mb-5">
             Lorem Ipsum is simply dummy text.
           </h3>
-          <div className="flex gap-7 justify-between">
+          <div className="md:flex gap-7 justify-between">
             <InputField
               label="Phone Number"
               placeholder="Phone Number"
@@ -94,7 +94,7 @@ export default function AccountSetting() {
             />
             <InputField label="Role" placeholder="Type your Role" type="text" />
           </div>{" "}
-          <div className="flex gap-7 justify-between">
+          <div className="md:flex  gap-7  justify-between">
             <InputField
               label="Location"
               placeholder="Type your Location"
