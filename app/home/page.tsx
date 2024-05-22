@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Input } from 'antd';
-import { SearchOutlined, SettingOutlined, BellOutlined } from '@ant-design/icons';
+import { SearchOutlined, SettingOutlined, BellOutlined, CloseOutlined } from '@ant-design/icons';
 import { FaEllipsisV, FaRegCommentDots } from 'react-icons/fa';
 import Image from 'next/image';
 import user from '../../public/Images/homeimages/useroneimg.svg';
@@ -25,7 +25,7 @@ const Page = () => {
   return (
     <DefaultLayout>
       <div className="flex w-full">
-        <div className={`flex-grow ${isCommentSectionVisible ? 'w-1/2' : 'w-full'} transition-width duration-300`}>
+        <div className={`transition-all duration-300 ${isCommentSectionVisible ? 'w-2/3' : 'w-full'}`}>
           <div className="flex">
             <div className="w-full">
               <Input
@@ -123,8 +123,12 @@ const Page = () => {
           </div>
         </div>
 
+        
         {isCommentSectionVisible && (
-          <div className=" w-80 h-full fixed top-0 right-0 bg-white shadow-lg z-50 overflow-auto">
+          <div className="transition-all duration-300 bg-white border border-gray-300" style={{ width: '30%', top: '0', right: '0' }}>
+            <div className="flex justify-end p-4">
+              <CloseOutlined className="text-xl cursor-pointer" onClick={toggleCommentSection} />
+            </div>
             <Commentcontent />
           </div>
         )}
