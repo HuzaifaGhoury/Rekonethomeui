@@ -91,15 +91,89 @@
        "explorecardData":[
         {
       "id": 1,
-      "mainheading": "Educational Institute Near You",
-      "headingtwo": "Students Near You",
       "image": "/Images/exploreimages/card1image.svg",
       "schoolname":"ABC School",
-      "contentone":"Yogyakarta",
+      "contentone":"Yogyaka",
       "contenttwo":"2,351", 
       "contentthree":"rta",
       "contentfour":"Members",
       "buttoncontent":"join Group"
+},
+{
+  "id": 2,
+  "image": "/Images/exploreimages/card2image.svg",
+  "schoolname":"XYZ Collage",
+  "contentone":"Jaka",
+  "contenttwo":"1,23M", 
+  "contentthree":"rta",
+  "contentfour":"Members",
+  "buttoncontent":"Join Group"
+}, 
+{
+  "id": 3,
+  "image": "/Images/exploreimages/card3image.svg",
+  "schoolname":"XYZ University",
+  "contentone":"Yogyaka",
+  "contenttwo":"2,351", 
+  "contentthree":"rta",
+  "contentfour":"Members",
+  "buttoncontent":"Join Group"
+},
+{
+  "id": 4,
+  "image": "/Images/exploreimages/card4image.svg",
+  "schoolname":"ABCD School",
+  "contentone":"Ngan",
+  "contenttwo":"124,213", 
+  "contentthree":"juk",
+  "contentfour":"Members",
+  "buttoncontent":"Join Group"
+},
+{
+  "id": 5,
+  "image": "/Images/exploreimages/card4image.svg",
+  "schoolname":"HRJK Collage",
+  "contentone":"Ngan",
+  "contenttwo":"124,213", 
+  "contentthree":"juk",
+  "contentfour":"Members",
+  "buttoncontent":"Join Group"
+}
+],
+"commentschatData":[
+  {
+    "id":1,
+    "commentuserimage":"/Images/commentimages/user1img.svg",
+    "commenttext":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+    "username":"Jonathan",
+    "commenttime":"1 Hour ago"
+  },
+  {
+    "id":2,
+    "commentuserimagetwo":"/Images/commentimages/user2.svg",
+    "commenttexttwo":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+    "usernametwo":"Jonathan",
+    "commenttimetwo":"1 Hour ago"
+  },
+  {
+    "id":3,
+    "commentuserimagethree":"/Images/commentimages/user2.svg",
+    "commenttextthree":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+    "usernamethree":"Jonathan",
+    "commenttimethree":"1 Hour ago"
+  }
+],
+"exploreslidderData":[
+  {
+    "id":1,
+    "tittle":"People who studying in XYZ",
+    "tittletwo":"Students Studies Here",
+    "seeall":"SEE ALL",
+    "image":"/Images/exploreimages/card1image.svg",
+    "user":"Neil",
+    "study":"Studying at XYZ",
+    "since":"Since 2020",
+    "btncontent":"Join Group"
 }
 ]
 }

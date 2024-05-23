@@ -63,7 +63,7 @@ const MessageList: React.FC< MessageListProps> = ({ setUserMessage ,setShowInfo}
               key={data.id}
               onClick={() => handleClick(data)}
             >
-              <Image
+              <Image  
                 src={profile}
                 alt="profile"
                 width={50}
