@@ -21,7 +21,7 @@ export default function SettingContent() {
           Account
         </span>
       ),
-      children: <AccountSetting/>
+      children: <AccountSetting />,
     },
     {
       key: "2",
